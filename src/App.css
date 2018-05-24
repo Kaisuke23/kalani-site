@@ -1,0 +1,210 @@
+.App {
+  text-align: center;
+  font-family: 'Crimson Text', serif;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.NavBar{
+  font-size: 1.5em;
+}
+
+#upButton{
+  font-size: 3em;
+  color:grey;
+}
+
+#whoAmI{
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: .5em;
+  font-size: 1em;
+}
+li{
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.Landing{
+  height: 50em;
+  background-color:#b5c7d1;
+  padding-top:1em;
+}
+
+#LandingHeader{
+  width:30em;
+  display: inline-block;
+  /* padding-left: em; */
+  /* padding-right:5em; */
+}
+
+#userIcon{
+  width:30em;
+  display:inline-flex;
+  padding:4em;
+}
+#resumeButton{
+  width:9em;
+  height:2.3em;
+  font-size: .9em;
+}
+img{
+  width:20em;
+}
+a{
+  padding-left: .5em;
+  padding-right: .5em;
+}
+
+i{
+  color:red;
+}
+
+.Profile{
+  height:50em;
+  /* background-color: red; */
+}
+
+.ProfileHeader{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  height: 5em;
+  font-family: 'Crimson Text', serif;
+  background-color: #1973e8;
+}
+.About{
+  height: 50em;
+}
+.AboutHeader{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  height: 5em;
+
+  background-color: #1973e8;
+}
+
+.Contact{
+  height: 35em;
+}
+.ContactHeader{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  height: 5em;
+
+  background-color: #1973e8;
+}
+
+#ifYouLike{
+  height:3em;
+  font-size: 2em;
+  background-color: #9dbcf2;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+#imageOfYeet{
+  width: 40em;
+  /* background-color: blue; */
+}
+#Messages{
+  font-size: 1.5em;
+  width: 40em;
+  /* background-color: red; */
+}
+#setTheory{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+#AboutMe{
+  font-size: 1.5em;
+  /* width:120em; */
+  padding: 2em;
+}
+
+#projects{
+  display: flex;
+  justify-content:space-around;
+  padding: 2em;
+}
+
+#python{
+  border: 5px solid black;
+  height: 20em;
+  width: 20em;
+  border-radius:1em;
+  overflow: hidden;
+  background:url("./images/python.png")
+}
+#overlay1{
+  height:20em;
+  width:20em;
+  background:grey;
+  opacity:0;
+  -webkit-transition: opacity .25s ease;
+
+}
+#pythonDescription{
+  color:blue;
+}
+#python:hover #overlay1{
+  opacity:.95;
+}
+
+.ProfileItemsOverlay{
+
+  color:blue;
+  font-size: 1em;
+}
+#overlayLink{
+  color:red;
+  font-size: 1.5em;
+}
+
+#UHGroupings{
+  border: 2px solid black;
+  height: 20em;
+  width: 20em;
+  border-radius:1em;
+  overflow: hidden;
+  background:url("./images/UHGrouping2.png")
+}
+
+#overlay2{
+  height:20em;
+  width:20em;
+  background:grey;
+  opacity:0;
+  -webkit-transition: opacity .25s ease;
+  transition: .25s ease;
+}
+#UHGroupings:hover #overlay2{
+  opacity:.95;
+}
