@@ -8,7 +8,7 @@ class About extends Component {
         <div id ="AboutMe">
         <p><strong>Kalani Sanidad</strong> likes and tries to be a jack of trades. </p>
 
-        <p>From the melting pot and paradise of <a href = "https://en.wikipedia.org/wiki/Maui">Maui, Hawaii <i class="fas fa-external-link-alt"></i></a>, he started coding while in high school for the Maui High Robtoics team.
+        <p>From the melting pot and paradise of <a href = "https://en.wikipedia.org/wiki/Maui" className = "Maui">Maui, Hawaii <i class="fas fa-external-link-alt"></i></a>, he started coding while in high school for the Maui High Robtoics team.
         <strong> Loyal</strong> to the FRC Team 2443, he learned the basics for computer programming and the start of software development with his teammates. After graduating high school, he moved on to study at
          <strong> The University of Hawaii at Manoa</strong>.</p>
 

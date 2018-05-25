@@ -6,6 +6,7 @@ import Profile from './components/profile';
 import About from './components/about';
 import Contact from './components/contact';
 import ScrollToTop from 'react-scroll-up';
+import ProfileHeader from './components/headers/Profile'
 
 import './App.css';
 
@@ -15,12 +16,16 @@ class App extends Component {
       <div className="App">
         <NavBar />
         <Landing />
+        <ProfileHeader/>
         <Profile />
         <About/>
         <Contact/>
-          <ScrollToTop showUnder={160}>
-            <span><i class="fas fa-arrow-circle-up" id = "upButton"></i></span>
-          </ScrollToTop>
+        <ScrollToTop showUnder={160}>
+          <span><i class="fas fa-arrow-circle-up" id = "upButton"></i></span>
+        </ScrollToTop>
+
+{/*
+          */}
       </div>
     );
   }

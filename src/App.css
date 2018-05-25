@@ -28,6 +28,24 @@
   to { transform: rotate(360deg); }
 }
 
+li{
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.i-hov{
+  font-size: 1.2em;
+  margin: 10px;
+  display: inline-block;
+  -webkit-transition-duration: 0.4s;
+transition-duration: 0.4s;
+}
+
+.i-hov:hover {
+  color: red;
+display: inline-block;
+}
+
 .NavBar{
   font-size: 1.5em;
 }
@@ -37,56 +55,60 @@
   color:grey;
 }
 
-#whoAmI{
-  padding-left: 2em;
-  padding-right: 2em;
-  padding-top: .5em;
-  font-size: 1em;
-}
-li{
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-}
-
 .Landing{
-  height: 50em;
-  background-color:#b5c7d1;
-  padding-top:1em;
+  display: flex;
+  background-color: #FFF;
+  height: 80vh;
+  padding-left: 75px;
+  padding-right: 75px;
+  align-items: center;
+justify-content: center;
 }
 
-#LandingHeader{
-  width:30em;
+.landingPicture{
+  transform: rotate(90deg) scale(1.5) scaleY(-1) translateY(1.5em);
+  border-radius: 100em;
+  width: 23vw;
+padding: 20px;
+height:22vw
+
+
+}
+
+.LandingHeader{
+
+  width: 100vh;
   display: inline-block;
   /* padding-left: em; */
   /* padding-right:5em; */
 }
 
-#userIcon{
-  width:30em;
-  display:inline-flex;
-  padding:4em;
-}
+
 #resumeButton{
   width:9em;
   height:2.3em;
   font-size: .9em;
+  /* -webkit-transition-duration: 0.4s;
+transition-duration: 0.4s; */
 }
-img{
-  width:20em;
-}
+
+/* #resumeButton:hover{
+  color: red;
+display: inline-block;
+} */
+
 a{
   padding-left: .5em;
   padding-right: .5em;
 }
+.Maui{
+  color: white;
+}
 
 i{
-  color:red;
+  color:blue;
 }
 
-.Profile{
-  height:50em;
-  /* background-color: red; */
-}
 
 .ProfileHeader{
   display:flex;
@@ -94,18 +116,24 @@ i{
   align-items:center;
   height: 5em;
   font-family: 'Crimson Text', serif;
-  background-color: #1973e8;
+  background-image: url("./images/Kalani_Banner_1.png");
+  background-size: 86em;
+  background-repeat: no-repeat;
 }
 .About{
-  height: 50em;
+  background-image: url("./images/Kalani-Background2.png");
+  background-repeat: no-repeat;
+  background-size: 1371px;
+
 }
 .AboutHeader{
   display:flex;
   justify-content: center;
   align-items:center;
   height: 5em;
-
-  background-color: #1973e8;
+  background-image: url("./images/Kalani_Banner_1.png");
+  background-size: 86em;
+  background-repeat: no-repeat;
 }
 
 .Contact{
@@ -117,7 +145,9 @@ i{
   align-items:center;
   height: 5em;
 
-  background-color: #1973e8;
+  background-image: url("./images/Kalani_Banner_1.png");
+  background-size: 86em;
+  background-repeat: no-repeat;
 }
 
 #ifYouLike{
@@ -147,64 +177,81 @@ i{
   font-size: 1.5em;
   /* width:120em; */
   padding: 2em;
+  color: white;
+  text-shadow: 0em 0em .4em #000000
 }
 
-#projects{
+
+.section {
+    padding: 50px;
+}
+
+.projects{
+  background-color: #FFF;
+    display: flex;
+  flex-wrap: wrap;
+  padding-left: 7em;
+}
+
+.flex-container {
   display: flex;
-  justify-content:space-around;
-  padding: 2em;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
-#python{
-  border: 5px solid black;
+.Img{
+  /* display: block;
+    width: 100%;
+    height: auto;
+transition: .5s ease; */
+  /* border: 7px solid black; */
+  /* border-radius:1em; */
   height: 20em;
-  width: 20em;
-  border-radius:1em;
+  width: 25em;
   overflow: hidden;
-  background:url("./images/python.png")
-}
-#overlay1{
-  height:20em;
-  width:20em;
-  background:grey;
-  opacity:0;
-  -webkit-transition: opacity .25s ease;
-
-}
-#pythonDescription{
-  color:blue;
-}
-#python:hover #overlay1{
-  opacity:.95;
+  display: inline-flex;
+  transition: .5s ease;
 }
 
-.ProfileItemsOverlay{
-
-  color:blue;
-  font-size: 1em;
-}
-#overlayLink{
-  color:red;
-  font-size: 1.5em;
+.item{
+  position: relative;
+  width: 500px;
+  margin: 10px;
 }
 
-#UHGroupings{
-  border: 2px solid black;
+.overlay{
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  opacity: .9;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+transition: .5s ease;
+}
+
+.item:hover .overlay{
+    bottom: 0;
+    height: 100%;
+}
+.text{
+  white-space: nowrap;
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.contactImg{
   height: 20em;
-  width: 20em;
-  border-radius:1em;
-  overflow: hidden;
-  background:url("./images/UHGrouping2.png")
-}
-
-#overlay2{
-  height:20em;
-  width:20em;
-  background:grey;
-  opacity:0;
-  -webkit-transition: opacity .25s ease;
-  transition: .25s ease;
-}
-#UHGroupings:hover #overlay2{
-  opacity:.95;
+  width: 23em;
+  border-radius: 8em;
+  transform: translateX(13em);
 }
