@@ -26,7 +26,7 @@ class Landing extends Component {
 <br/>
 <br/>
           <a href="https://www.github.com/kaisuke23/">
-          <a class="btn btn-primary" href="https://goo.gl/NJqabD" role="button" id = "resumeButton">Resume <i class="far fa-file-pdf"></i></a>
+          <a class="btn btn-primary" href="https://goo.gl/WsrZhb" role="button" id = "resumeButton">Resume <i class="far fa-file-pdf"></i></a>
           </a>
         </h3>
       </div>
