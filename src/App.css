@@ -117,13 +117,14 @@ i{
   height: 5em;
   font-family: 'Crimson Text', serif;
   background-image: url("./images/Kalani_Banner_1.png");
-  background-size: 86em;
+  background-size: 122em;
   background-repeat: no-repeat;
 }
 .About{
   background-image: url("./images/Kalani-Background2.png");
   background-repeat: no-repeat;
-  background-size: 1371px;
+  background-size: 118em;
+  background-position: 26% 22%;
 
 }
 .AboutHeader{
@@ -132,7 +133,7 @@ i{
   align-items:center;
   height: 5em;
   background-image: url("./images/Kalani_Banner_1.png");
-  background-size: 86em;
+  background-size: 122em;
   background-repeat: no-repeat;
 }
 
@@ -146,7 +147,7 @@ i{
   height: 5em;
 
   background-image: url("./images/Kalani_Banner_1.png");
-  background-size: 86em;
+  background-size: 122em;
   background-repeat: no-repeat;
 }
 
